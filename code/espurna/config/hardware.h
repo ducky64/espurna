@@ -2549,6 +2549,25 @@
     #define DHT_TYPE            DHT_CHIP_DHT11
 
 // -----------------------------------------------------------------------------
+// ESP-01S DHT22 v1.0
+// https://www.aliexpress.com/wholesale?SearchText=esp-01s+dht22
+// -----------------------------------------------------------------------------
+
+#elif defined(GENERIC_ESP01S_DHT22_V10)
+
+    // Info
+    #define MANUFACTURER        "GENERIC"
+    #define DEVICE              "ESP01S_DHT22_10"
+
+    // DHT11
+    #ifndef DHT_SUPPORT
+    #define DHT_SUPPORT         1
+    #endif
+    #define DHT_PIN             2
+    #define DHT_TYPE            DHT_CHIP_DHT22
+
+
+// -----------------------------------------------------------------------------
 // ESP-01S DS18B20 v1.0
 // https://www.aliexpress.com/wholesale?catId=0&initiative_id=SB_20180410105933&SearchText=esp-01s+ds18b20
 // -----------------------------------------------------------------------------
