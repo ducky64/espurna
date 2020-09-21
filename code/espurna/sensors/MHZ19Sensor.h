@@ -211,7 +211,7 @@ class MHZ19Sensor : public BaseSensor {
 
         uint8_t _checksum(uint8_t * command) {
         	uint8_t sum = 0x00;
-        	for (unsigned char i = 1; i < MHZ19_REQUEST_LEN-1; i++) {
+        	for (unsigned char i = 1; i <= MHZ19_REQUEST_LEN-1; i++) {
         		sum += command[i];
         	}
         	sum = 0xFF - sum + 0x01;
