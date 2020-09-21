@@ -4320,6 +4320,32 @@
 
 // -----------------------------------------------------------------------------
 
+
+
+
+// -----------------------------------------------------------------------------
+// Custom Breadboard Hax
+// -----------------------------------------------------------------------------
+
+#elif defined(CUSTOM_BREADBOARD_AQ)
+
+    // Info
+    #define MANUFACTURER        "DUCKY"
+    #define DEVICE              "BREADBOARD_AQ"
+
+    // DHT11
+    #define PMSX003_SUPPORT                 1
+    #define PMS_TYPE                        PMS_TYPE_X003
+    
+    #define PMS_RX_PIN                      14      
+    #define PMS_TX_PIN                      12      
+    #define PMS_USE_SOFT                    1
+    
+    #define MHZ19_SUPPORT                   1
+    #define MHZ19_RX_PIN                    13
+    #define MHZ19_TX_PIN                    15
+
+
 #else
 
     #error "UNSUPPORTED HARDWARE!!"
