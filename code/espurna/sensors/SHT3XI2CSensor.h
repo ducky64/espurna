@@ -37,7 +37,7 @@ class SHT3XI2CSensor : public I2CSensor {
             if (!_dirty) return;
 
             // I2C auto-discover
-            unsigned char addresses[] = {0x45};
+            unsigned char addresses[] = {0x44};
             _address = _begin_i2c(_address, sizeof(addresses), addresses);
             if (_address == 0) return;
 

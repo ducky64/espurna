@@ -2548,6 +2548,20 @@
     #define DHT_PIN             2
     #define DHT_TYPE            DHT_CHIP_DHT11
 
+
+
+#elif defined(DUCKY_SHT3X)
+
+    // Info
+    #define MANUFACTURER        "DUCKY"
+    #define DEVICE              "SHT3X"
+
+    #define SHT3X_I2C_SUPPORT               1
+    
+    #define I2C_SDA_PIN             4
+    #define I2C_SCL_PIN             5
+    
+
 // -----------------------------------------------------------------------------
 // ESP-01S DS18B20 v1.0
 // https://www.aliexpress.com/wholesale?catId=0&initiative_id=SB_20180410105933&SearchText=esp-01s+ds18b20
